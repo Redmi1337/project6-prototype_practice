@@ -1,15 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void Foo();
+int Foo(int a, int b);
 
 int main()
 {
-    Foo();
+    int a;
+    int b;
+    cout << "enter two int values" << endl;
+    cin >> a >> b;
+    cout << Foo(a, b) << endl;
+    system("pause");
     return 0;
 }
 
-void Foo()
+int Foo(int a, int b)
 {
-    cout << "BBC" << endl;
+    return a + b;
 }
